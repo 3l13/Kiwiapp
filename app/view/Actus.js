@@ -28,23 +28,7 @@ Ext.define('PDJ.view.Actus', {
 			title:'Dernières actualités',
 
 			
-			store:{
-				
-				storeId: 'blogStore',
-				autoLoad: true,
-				fields:['title', 'author', 'content'],
-				
-				proxy : {
-					type:'jsonp',
-					url: 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&q=http://www.alsacreations.com/rss/actualites.xml',
-					
-					reader:{
-						type:'json',
-						rootProperty:'responseData.feed.entries'
-					}
-					
-				}
-			}
+			store: 'blogStore'
 		}
 	}
 });

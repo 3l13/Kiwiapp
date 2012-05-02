@@ -13,7 +13,10 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
+
     views: ['Main', 'Home', 'Actus', 'Contact'],
+    models: ['Actu'],
+    stores: ['Actus'],
 
     icon: {
         57: 'resources/icons/Icon.png',
